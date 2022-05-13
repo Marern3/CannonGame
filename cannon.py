@@ -77,8 +77,10 @@ def move():
         if not inside(target):
             #VRDL: Modificación para que el juego nunca termine
             targets[targets.index(target)].x=200
-
-    ontimer(move, 50)
+#Modifica velocidad de proyectil y objetivos
+#Entre mayor sea el número, menos rápido se moverán
+#Entre menor sea el número, más rápido se moverán
+    ontimer(move, 1) 
 
 
 setup(420, 420, 370, 0)
