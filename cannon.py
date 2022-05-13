@@ -1,6 +1,6 @@
 """Cannon, hitting targets with projectiles.
 
-Author: Mariana Edith Ramírez Navarrete
+Author 1: Mariana Edith Ramírez Navarrete
 Author 2: Humberto Alejandro Rosas Téllez
 
 Exercises
