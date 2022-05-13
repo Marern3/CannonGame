@@ -74,7 +74,10 @@ def move():
         if not inside(target):
             return
 
-    ontimer(move, 50)
+#Velocidad de proyectil y objetivos
+#Entre menor sea el número (1), más rápido se moverán
+#Entre mayor sea el número, más lento se moverán
+    ontimer(move, 1)
 
 
 setup(420, 420, 370, 0)
