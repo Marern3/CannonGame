@@ -1,5 +1,7 @@
 """Cannon, hitting targets with projectiles.
 
+Author: Mariana Edith Ramírez Navarrete
+
 Exercises
 
 1. Keep score by counting target hits.
@@ -72,7 +74,8 @@ def move():
 
     for target in targets:
         if not inside(target):
-            return
+            #VRDL: Modificación para que el juego nunca termine
+            targets[targets.index(target)].x=200
 
     ontimer(move, 50)
 
