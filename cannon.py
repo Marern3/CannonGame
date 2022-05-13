@@ -1,5 +1,13 @@
 """Cannon, hitting targets with projectiles.
-Humberto Alejandro Rosas Téllez
+
+Author: Mariana Edith Ramírez Navarrete
+
+Exercises
+
+1. Keep score by counting target hits.
+2. Vary the effect of gravity.
+3. Apply gravity to the targets.
+4. Change the speed of the ball.
 """
 
 from random import randrange
@@ -66,12 +74,10 @@ def move():
 
     for target in targets:
         if not inside(target):
-            return
+            #VRDL: Modificación para que el juego nunca termine
+            targets[targets.index(target)].x=200
 
-#Velocidad de proyectil y objetivos
-#Entre menor sea el número (1), más rápido se moverán
-#Entre mayor sea el número, más lento se moverán
-    ontimer(move, 1)
+    ontimer(move, 50)
 
 
 setup(420, 420, 370, 0)
